@@ -9,6 +9,11 @@ import { sideBarVariants } from "@/src/lib/utils/sidebar-links";
 
 export default function SideBar() {
     const { sideBarOpen } = useCotopiaPayroll();
+
+    function handleLogout() {
+        localStorage.removeItem("user-data");
+    }
+
     return (
         <>
             {sideBarOpen && (
@@ -20,7 +25,7 @@ export default function SideBar() {
                 >
                     <SideBarLinks />
 
-                    <Link href={"/dashboard"} className="p-3 flex items-center gap-x-2 hover:bg-gray-800 rounded transition-colors">
+                    <Link href={"/auth/login"} onClick={handleLogout} className="p-3 flex items-center gap-x-2 hover:bg-gray-800 rounded transition-colors">
                         <LogOut color="red" />
                         <span className="text-gray-200">Log Out</span>
                     </Link>

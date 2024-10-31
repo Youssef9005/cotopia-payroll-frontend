@@ -1,5 +1,5 @@
 "use client";
-import toast from "react-hot-toast";
+import { toast } from "sonner";
 import UserInput from "../user-input";
 import CButton from "@/src/components/shared/c-button";
 

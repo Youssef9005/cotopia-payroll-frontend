@@ -13,14 +13,21 @@
     "@emotion/styled": "^11.13.0",
     "@mui/material": "^6.1.5",
     "ag-grid-react": "^32.3.0",
+    "axios": "^1.7.7",
+    "formik": "^2.4.6",
     "framer-motion": "^11.11.9",
+    "js-cookie": "^3.0.5",
+    "jsonwebtoken": "^9.0.2",
     "lucide-react": "^0.453.0",
     "next": "15.0.1",
+    "next-auth": "^5.0.0-beta.25",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-hot-toast": "^2.4.1"
+    "sonner": "^1.5.0",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.7",
     "@types/node": "^22",
     "@types/react": "^18",
     "@types/react-dom": "^18",

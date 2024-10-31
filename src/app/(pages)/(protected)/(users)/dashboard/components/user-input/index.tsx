@@ -1,12 +1,15 @@
 "use client"
 import { ChangeEvent, useState } from "react";
-import toast from "react-hot-toast";
 import CInput from "@/src/components/shared/c-input";
 import { UserInputProps } from "@/src/types/user-input";
+import { toast } from "sonner";
+import { UserDataType } from "@/src/types/user-data";
 
 export default function UserInput({ type, id, name, label }: UserInputProps) {
-    const [userEmail, setUserEmail] = useState<string>("youssefsameh905@gmail.com");
-    const [userName, setUserName] = useState<string>("youssefsameh80");
+    const data = JSON.parse(localStorage.getItem("user-data")!) as UserDataType;
+
+    const [userEmail, setUserEmail] = useState<string | undefined>(data?.userEmail);
+    const [userName, setUserName] = useState<string | undefined>(data?.userName);
     const [ipAdders, setIpAdders] = useState<string>("TJUd6wGP8kKWM9xRaoL4RHoVrUx1KpW76s");
 
     function handleValues(event: ChangeEvent<HTMLInputElement>, name: "userEmail" | "userName" | "ipAdders") {

@@ -5,9 +5,10 @@ import WaterMark from "@/src/components/shared/water-mark";
 
 export default function DashboardLayout({
     children,
-}: {
-    children: React.ReactNode;
-}) {
+}:
+    {
+        children: React.ReactNode;
+    }) {
     return (
         <>
             <ContextPayrollProvider>

@@ -18,6 +18,7 @@ export function ContextPayrollProvider({ children }: CotopiaContextProps) {
 
 export function useCotopiaPayroll() {
     const context = useContext(CotopiaPayrollContext);
+
     if (!context) {
         throw new Error("useCotopiaPayroll must be used within a ContextPayrollProvider");
     }
