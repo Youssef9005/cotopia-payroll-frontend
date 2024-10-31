@@ -1,5 +1,4 @@
 "use client";
-import CButton from "@/src/components/shared/c-button";
 import { UserDataType } from "@/src/types/user-data";
 import Image from "next/image";
 
